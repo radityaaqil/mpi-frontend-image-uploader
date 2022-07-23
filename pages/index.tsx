@@ -1,6 +1,7 @@
 import * as AWS from "aws-sdk";
 import { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
+import Head from "next/head";
 
 const Home = () => {
   //Upload file state (array of objects)
@@ -86,6 +87,9 @@ const Home = () => {
 
   return (
     <div className="bg-black min-h-screen pb-5">
+      <Head>
+        <title>Image Uploader | radityaAqil</title>
+      </Head>
       <div className="flex justify-center mx-8 lg:mx-0">
         <div className="pt-20 text-white text-7xl">Image Uploader</div>
       </div>
